@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+
+<body background="https://th.bing.com/th/id/R.f96663ee39e8e75d8247ac3e517843b9?rik=Oxq2TBzV1pMDIA&riu=http%3a%2f%2fwww.hdcarwallpapers.com%2fwalls%2fferrari_supercar-HD.jpg&ehk=ChuPsjLlfmjIU09wDQQWIutBPPoGw5ABvI9xHsZeZCI%3d&risl=&pid=ImgRaw&r=0">
+    <form>
+        <h1>This is Simple Car Enthusiast Quiz</h1>
+        <label>Question 1: Which automotive company produces the iconic sports car model known as the "911"?</label><br>
+        <ol>
+            <li><input type="radio" name="1" value="a">a) Ferrari<br></li>
+            <li><input type="radio" name="1" value="b">b) Lamborghini<br></li>
+            <li><input type="radio" name="1" value="ans">c) Porsche<br></li>
+            <li><input type="radio" name="1" value="d">d) Aston Martin<br></li>
+            <small id="answer"></small><br>
+        </ol>
+        <br>
+
+        <label>Question 2: What does the acronym SUV stand for in the automotive world?</label><br>
+        <ol>
+            <li><input type="radio" name="2" value="ans">a) Sports Utility Vehicle<br></li>
+            <li><input type="radio" name="2" value="b">b) Super Urban Vehicle<br></li>
+            <li><input type="radio" name="2" value="c">c) Speedy Undercover Vehicle<br></ll>
+            <li><input type="radio" name="2" value="d">d) Superior Utility Van<br></li>
+            <small id="answer2"></small><br>
+        </ol>
+        <br>
+        <label>Question 3: In which country did the famous luxury car manufacturer Rolls-Royce originate?</label><br>
+        <ol>
+            <li><input type="radio" name="3" value="a">a) Germany<br></li>
+            <li><input type="radio" name="3" value="ans">b) United Kingdom<br></li>
+            <li><input type="radio" name="3" value="c">c) Italy<br></ll>
+            <li><input type="radio" name="3" value="d">d) France<br></li>
+            <small id="answer3"></small><br>
+        </ol>
+        <br>
+        <label>Question 4: Which American muscle car is known for its aggressive design and a horse logo in its emblem?</label><br>
+        <ol>
+            <li><input type="radio" name="4" value="ans">a) Ford Mustang<br></li>
+            <li><input type="radio" name="4" value="b">b) Chevrolet Camaro<br></li>
+            <li><input type="radio" name="4" value="c">c) Dodge Challenger<br></ll>
+            <li><input type="radio" name="4" value="d">d) Plymouth Barracuda<br></li>
+            <small id="answer4"></small><br>
+        </ol>
+        <br>
+        <label>Question 5: What is the top speed of the Bugatti Veyron, one of the fastest production cars in the world?</label><br>
+        <ol>
+            <li><input type="radio" name="5" value="a">a) 220 mph (354 km/h)<br></li>
+            <li><input type="radio" name="5" value="ans">b) 260 mph (418 km/h)<br></li>
+            <li><input type="radio" name="5" value="c">c) 300 mph (483 km/h)<br></ll>
+            <li><input type="radio" name="5" value="d">d) 350 mph (563 km/h)<br></li>
+            <small id="answer5"></small><br>
+        </ol>
+        <br>
+        <h1 id="button" style="text-align: center;"></h1> <br>
+        <center><button>reset</button></center>
+    </form>
+<center><button onclick="quiz()">click</button></center>
+    <script type="text/javascript">
+
+        const quiz = () => {    
+
+            var num = 0;
+            var name = document.getElementsByName('1');
+            var answer = document.getElementById("answer");
+            
+            var button = document.getElementById("button");
+
+            for (var i = 0; i < name.length; i++) {
+                if (name[i].checked) {
+                    if (name[i].value == 'ans') {
+                        answer.style.backgroundColor = "green";
+                        answer.textContent = "correct";
+                        num = num + 1;
+                    }
+
+                    else {
+                        answer.style.backgroundColor = "Red";
+                        answer.textContent = "Wrong";
+
+                    }
+                } 
+            }
+            var name = document.getElementsByName('2');
+            var answer = document.getElementById("answer2");
+            for (var i = 0; i < name.length; i++) {
+                if (name[i].checked) {
+                    if (name[i].value == 'ans') {
+                        answer.style.backgroundColor = "green";
+                        answer.textContent = "correct";
+                        num = num + 1;
+                    }
+
+                    else {
+                        answer.style.backgroundColor = "Red";
+                        answer.textContent = "Wrong";
+
+                    }
+                } 
+            }
+            var name = document.getElementsByName('3');
+            var answer = document.getElementById("answer3");
+            for (var i = 0; i < name.length; i++) {
+                if (name[i].checked) {
+                    if (name[i].value == 'ans') {
+                        answer.style.backgroundColor = "green";
+                        answer.textContent = "correct";
+                        num = num + 1;
+                    }
+
+                    else {
+                        answer.style.backgroundColor = "Red";
+                        answer.textContent = "Wrong";
+
+                    }
+                } 
+            }
+            var name = document.getElementsByName('4');
+            var answer = document.getElementById("answer4");
+            for (var i = 0; i < name.length; i++) {
+                if (name[i].checked) {
+                    if (name[i].value == 'ans') {
+                        answer.style.backgroundColor = "green";
+                        answer.textContent = "correct";
+                        num = num + 1;
+                    }
+
+                    else {
+                        answer.style.backgroundColor = "Red";
+                        answer.textContent = "Wrong";
+
+                    }
+                } 
+            }
+            var name = document.getElementsByName('5');
+            var answer = document.getElementById("answer5");
+            for (var i = 0; i < name.length; i++) {
+                if (name[i].checked) {
+                    if (name[i].value == 'ans') {
+                        answer.style.backgroundColor = "green";
+                        answer.textContent = "correct";
+                        num = num + 1;
+                    }
+
+                    else {
+                        answer.style.backgroundColor = "Red";
+                        answer.textContent = "Wrong";
+
+                    }
+                } 
+            } button.textContent = "Your score :" + num + "/5";
+
+        }
+    </script>
+</body>
+
+</html>
